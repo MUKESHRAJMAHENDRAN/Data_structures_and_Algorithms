@@ -1,3 +1,4 @@
 a = 4
 b = 2
-print(c = a * b)
+print(a)
+print(b)
