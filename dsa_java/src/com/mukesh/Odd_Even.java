@@ -1,5 +1,7 @@
 package com.mukesh;
 
+//Write a program to print whether a number is even or odd, also take
+//input from the user
 import java.util.Scanner;
 
 public class Odd_Even {
