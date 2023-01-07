@@ -1,4 +1,5 @@
 package com.mukesh;
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Basics_java {
@@ -9,12 +10,58 @@ public class Basics_java {
 //            (HINT: while loop)
 //    5. Take integer inputs till the user enters 0 and print the largest number from
 //    all.
-//    6. Addition Of Two Numbers
     public static void main(String[] args) {
 //        int num = fibonocci();
 //        System.out.println(num);
-        leetcode();
+//        leetcode();
+//        factors();
+//        int sum = sum();
+//        System.out.println("Sum pf the number: " + sum);
+        int largest = largest();
+        System.out.print("Largest no is: " + largest);
 
+    }
+    static int largest(){
+        System.out.println("Enter the 0 to exit: ");
+        Scanner in = new Scanner(System.in);
+        int largest = 0;
+        while(true){
+            System.out.print("Enter the number: ");
+            int n = in.nextInt();
+            if (n == 0){
+                return largest;
+            }
+            if (largest < n){
+                largest = n;
+            }
+        }
+    }
+    static int sum(){
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter 0 to exit: ");
+        int sum = 0;
+        while(true){
+            System.out.print("Enter the number: ");
+            int n = in.nextInt();
+            if (n == 0){
+                return sum;
+            }
+            else{
+                sum = sum + n;
+            }
+        }
+    }
+
+    static void factors(){
+//        Input a number and print all the factors of that number (use loops)
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt();
+        for (int i = 1; i <= a; i++) {
+            if (a % i == 0) {
+                System.out.print(i + " ");
+            }
+        }
+//
     }
 
     static void leetcode() {
