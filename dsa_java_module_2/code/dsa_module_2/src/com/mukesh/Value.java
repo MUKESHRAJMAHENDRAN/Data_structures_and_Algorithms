@@ -7,7 +7,6 @@ public class Value {
         System.out.println(name_1);
         name("Devi");
         System.out.println(name_1);
-        int a[0]
     }
     static void name(String naam){
         naam = "Lok";
