@@ -8,7 +8,7 @@ public class PattenProblems {
 //        pattern4(5);
 //        pattern5(5);
 //        pattern6(5);
-//        pattern7(5);
+        pattern7(5);
     }
 
     static void pattern7(int n) {
@@ -40,7 +40,7 @@ public class PattenProblems {
 
 
     static void pattern5(int n) {
-        for (int i = 0; i < (2*n-1); i++) {
+        for (int i = 0; i < (2*n); i++) {
             int totalCol = i > n ? 2*n-i : i;
             for (int j = 0; j < totalCol ; j++) {
                 System.out.print('*');
